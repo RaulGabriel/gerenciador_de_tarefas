@@ -1,4 +1,4 @@
-# 📝 Gerenciador de Tarefas (Java)
+# Gerenciador de Tarefas (Java)
 
 Projeto simples em Java que permite adicionar, listar e concluir tarefas via terminal.
 
