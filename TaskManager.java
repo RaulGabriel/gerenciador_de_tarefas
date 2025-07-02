@@ -8,7 +8,7 @@ public class TaskManager {
         int opcao;
 
         do {
-            System.out.println("\n📋 Gerenciador de Tarefas");
+            System.out.println("\nGerenciador de Tarefas");
             System.out.println("[1] Adicionar tarefa");
             System.out.println("[2] Listar tarefas");
             System.out.println("[3] Marcar tarefa como concluída");
@@ -22,10 +22,10 @@ public class TaskManager {
                     System.out.print("Digite a descrição da tarefa: ");
                     String desc = scanner.nextLine();
                     tarefas.add(new Task(desc));
-                    System.out.println("✅ Tarefa adicionada!");
+                    System.out.println("Tarefa adicionada!");
                     break;
                 case 2:
-                    System.out.println("\n📃 Tarefas:");
+                    System.out.println("\nTarefas:");
                     for (int i = 0; i < tarefas.size(); i++) {
                         System.out.println((i + 1) + ". " + tarefas.get(i));
                     }
@@ -35,16 +35,16 @@ public class TaskManager {
                     int numero = scanner.nextInt();
                     if (numero >= 1 && numero <= tarefas.size()) {
                         tarefas.get(numero - 1).marcarComoConcluida();
-                        System.out.println("✅ Tarefa marcada como concluída.");
+                        System.out.println("Tarefa marcada como concluída.");
                     } else {
-                        System.out.println("❌ Número inválido.");
+                        System.out.println("Número inválido.");
                     }
                     break;
                 case 4:
-                    System.out.println("👋 Saindo...");
+                    System.out.println("Saindo...");
                     break;
                 default:
-                    System.out.println("❌ Opção inválida.");
+                    System.out.println("Opção inválida.");
             }
 
         } while (opcao != 4);
